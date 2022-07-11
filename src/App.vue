@@ -12,8 +12,20 @@ import Note from "./components/Note.vue";
 
 <style>
 * {
-  margin: 0 auto;
+  margin: 0 ;
   padding: 0;
+}
+.aa{
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  min-width: 200px;
+}
+textarea{
+  width: 100%;
+  resize: none;
 }
 
 .container {

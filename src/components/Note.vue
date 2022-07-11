@@ -13,26 +13,33 @@ function outFile() {
 </script>
 
 <template>
-  <div class="card">
+  <div class="container">
     <h1>WEBNote</h1>
-    <!-- <p>words enter book</p> -->
-    <textarea id="txtarea" rows="4" cols="14" maxlength="500"></textarea>
+    <div class="card">
+      <!-- <p>words enter book</p> -->
+      <textarea id="txtarea" rows="4" cols="14" maxlength="500"></textarea>
+
+    </div>
     <div class="btn" @click="outFile">export file</div>
   </div>
 </template>
 
 <style scoped>
+.container {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  gap: 25px;
+
+}
 .card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  max-width: 1200px;
-  min-width: 800px;
-
+  height: 800px;
+  width: 900px;
+  min-width: 200px;
+  /* background-color: rgb(205, 90, 90); */
 }
 
 .btn {
@@ -51,16 +58,13 @@ function outFile() {
 }
 
 #txtarea {
-  max-height: 550px;
-  max-width: 900px;
-  min-height: 550px;
-  min-width: 150px;
-  width: 900px;
+  height: 100%;
+  width: 100%;
   border: 2px solid #ccc;
   border-radius: 8px;
   padding: 8px;
   font-size: 16px;
-  resize: horizontal;
+  resize: none;
 
   -webkit-box-shadow: 0px 9px 8px 3px #000000;
   box-shadow: 0px 9px 8px 3px #000000;
